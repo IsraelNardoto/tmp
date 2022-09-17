@@ -2,14 +2,14 @@
 
 ## 1. Prepare your catkin workspace
 
-Open your command prompt and go to your home directory:
+Abra seu prompt de comando e vá para o diretório home:
 
 ```
 cd ~
 ```
 
 
-If not yet there, make a new catkin workspace for all your robotic setups:
+Se ainda não existe, faça um novo catkin workspace para todos os seus robotic setups:
 
 ```
 mkdir -p ~/robotic_setups/src
@@ -18,15 +18,14 @@ catkin_make
 ```
 
 
-Then go to your src folder and make a package with your new setup openmanipulator_with_wheeltec:
-
+Então vá para seu ```src``` e faça um pacote com seu novo setup openmanipulator_with_wheeltec:
 
 ```
 cd ~/robotic_setups/src
 catkin_create_pkg openmanipulator_with_wheeltec
 ```
+Isso vai criar uma pasta openmanipulator_with_wheeltec que contem um ```package.xml``` e um ```CMakeLists.txt```. Então abra o ```package.xml``` e adicione as linhas a seguir depois da linha ```<buildtool_depend>catkin</buildtool_depend>```:
 
-This will create a openmanipulator_with_wheeltec folder which contains a package.xml and a CMakeLists.txt. Then open package.xml and add the following lines after the line <buildtool_depend>catkin</buildtool_depend>.
 
 ```
 <buildtool_depend>catkin</buildtool_depend>
@@ -42,16 +41,16 @@ This will create a openmanipulator_with_wheeltec folder which contains a package
 ```
 
 
-Optionally, modify ```email``` and ```licence```, ```version``` tags.
-
-Then create 4(+2) folders: launch, rviz, urdf and meshes (with visual and collision folders):
-
+Opicionalmente, modifique  ```email``` ,```licence``` e ```version```.
+Então crie 4(+2) pastas: launch, rviz, urdf and meshes (com as pastas visual e collision)
 
 ```
 mkdir ~/robotic_setups/src/openmanipulator_with_wheeltec/{launch,rviz,urdf,meshes,meshes/visual,meshes/collision}
 ```
 
-Copy your meshes into meshes/visual and meshes/collision.
+Copie suas malhas para dentro de ```meshes/visual``` e ```meshes/collision```.
+
+
 
 ## 2. Create xacros and generate urdf
 
