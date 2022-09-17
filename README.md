@@ -1,5 +1,7 @@
 # Fundindo PRO 4WD + openmanipulator
 
+## Prepare your catkin workspace
+
 Open your command prompt and go to your home directory:
 
 ```
