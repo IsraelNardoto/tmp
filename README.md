@@ -61,4 +61,11 @@ Copie suas malhas para dentro de ```meshes/visual``` e ```meshes/collision```.
 
 ## 2. Create xacros and generate urdf
 
-Rather than writing urdf files directly, it is more convinient to write xacro files from which urdfs are generated. As its name implies, xacro is a macro language. The language allows to use constants, to perform simple math operations and to parameterize macros simply by using ${}.
+Go to the urdf folder and create a xacro file for openmanipulator with the text editor of your choice (e.g. gedit):
+
+```
+cd ~/robotic_setups/src/openmanipulator_with_wheeltec/urdf
+```
+```
+gedit measurement_tool.xacro
+```
