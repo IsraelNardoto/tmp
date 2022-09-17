@@ -13,7 +13,11 @@ Se ainda não existe, faça um novo catkin workspace para todos os seus robotic 
 
 ```
 mkdir -p ~/robotic_setups/src
+```
+```
 cd ~/robotic_setups
+```
+```
 catkin_make 
 ```
 
@@ -22,6 +26,8 @@ Então vá para seu ```src``` e faça um pacote com seu novo setup openmanipulat
 
 ```
 cd ~/robotic_setups/src
+```
+```
 catkin_create_pkg openmanipulator_with_wheeltec
 ```
 Isso vai criar uma pasta openmanipulator_with_wheeltec que contem um ```package.xml``` e um ```CMakeLists.txt```. Então abra o ```package.xml``` e adicione as linhas a seguir depois da linha ```<buildtool_depend>catkin</buildtool_depend>```:
