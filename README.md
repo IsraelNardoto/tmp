@@ -42,7 +42,7 @@ This will create a openmanipulator_with_wheeltec folder which contains a package
 ```
 
 
-Optionally, modify email and licence, version tags.
+Optionally, modify ```email``` and ```licence```, ```version``` tags.
 
 Then create 4(+2) folders: launch, rviz, urdf and meshes (with visual and collision folders):
 
@@ -54,3 +54,5 @@ mkdir ~/robotic_setups/src/openmanipulator_with_wheeltec/{launch,rviz,urdf,meshe
 Copy your meshes into meshes/visual and meshes/collision.
 
 ## 2. Create xacros and generate urdf
+
+
