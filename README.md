@@ -52,3 +52,5 @@ mkdir ~/robotic_setups/src/openmanipulator_with_wheeltec/{launch,rviz,urdf,meshe
 ```
 
 Copy your meshes into meshes/visual and meshes/collision.
+
+## 2. Create xacros and generate urdf
