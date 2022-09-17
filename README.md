@@ -1,4 +1,4 @@
-# fundindo PRO 4WD + openmanipulator
+# Fundindo PRO 4WD + openmanipulator
 
 Open your command prompt and go to your home directory:
 
