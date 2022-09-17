@@ -42,7 +42,8 @@ Isso vai criar uma pasta openmanipulator_with_wheeltec que contem um ```package.
 
 
 Opicionalmente, modifique  ```email``` ,```licence``` e ```version```.
-Então crie 4(+2) pastas: launch, rviz, urdf and meshes (com as pastas visual e collision)
+
+Então crie 4(+2) pastas: launch, rviz, urdf and meshes (com as pastas visual e collision):
 
 ```
 mkdir ~/robotic_setups/src/openmanipulator_with_wheeltec/{launch,rviz,urdf,meshes,meshes/visual,meshes/collision}
