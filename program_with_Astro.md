@@ -3,7 +3,7 @@
 
 ## Contents
 
-- [1. Introdução](#introducao)
+1. [Introdução](#introducao)
 
 2. [CARMEN Style Guide](#carmen-style-guide)
 
