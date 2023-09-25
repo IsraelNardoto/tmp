@@ -3,7 +3,7 @@
 
 ## Contents
 
-[1.Introdução](#introducao)
+- [1. Introduction](#introduction)
 
 2. [CARMEN Style Guide](#carmen-style-guide)
 
@@ -55,7 +55,7 @@
 
 
 
-#[1.Introdução] {#introducao}
+# 1. Introduction {#introduction}
 
 This document is designed to get CARMEN users started in writing new programs for integration into the program set. Because of the diverse skills and habits of programmers, the first section is a Style Guide to ensure compatability and clarity of new programs. The next secions describe the commands for getting information and issuing commands within CARMEN.
 
