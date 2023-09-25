@@ -7,7 +7,7 @@
 
 2. [CARMEN Style Guide](#carmen-style-guide)
 
-    2.1. [The Prime Directive](the-prime-directive)
+    2.1. [The Prime Directive](#the-prime-directive)
 
     2.2. [Units and Coordinates](#units-and-coordinates)
 
