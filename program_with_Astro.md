@@ -831,8 +831,6 @@ If ```carmen_param_allow_unfound_variables()``` is set to 0 (by default), then `
 
 If a process loads its parameter set using the parameter factory methods, then running the process with the -h or -help command line option will print out a list of parameters used by that process, their expected types and whether or not the process subscribes to changes.
 
-6.3  Specifying Parameters from the Command Line
-
 #### <a name="specifying-parameters-from-the-command-line"></a> 6.3. Specifying Parameters from the Command Line
 
 Parameter values can be temporarily over-ridden from the command line of a given process, for that process only. For example:
