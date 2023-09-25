@@ -61,7 +61,7 @@ This document is designed to get CARMEN users started in writing new programs fo
 
 ## <a name="carmen-style-guide"></a>2. CARMEN Style Guide
 
-### <a name="the-prime-directive"></a>2.1 The Prime Directive
+### <a name="the-prime-directive"></a>2.1. The Prime Directive
 
 You are not the only person who will ever have to read, understand and modify your code.
 
