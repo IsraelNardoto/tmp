@@ -41,7 +41,7 @@
 
     5.3. [Off Limits Regions](#off-limits-regions)
 
-    5.3. [Navigator Maps](#navigator-maps)
+    5.4. [Navigator Maps](#navigator-maps)
 
 6. [Getting Parameters](#getting-parameters)
 
@@ -51,7 +51,7 @@
 
     6.3. [The Parameter Factory](#the-parameter-factory)
 
-    6.3. [Specifying Parameters from the Command Line](#specifying-parameters-from-the-command-line)
+    6.4. [Specifying Parameters from the Command Line](#specifying-parameters-from-the-command-line)
 
 
 
