@@ -13,7 +13,7 @@
 
     2.3. [Naming Conventions](#naming-conventions)
 
-    2.3. [Memory Management, System Calls, & Functions with Side Effects](#Memory-Management-System-Calls-Functions-with-Side-Effects)
+    2.3. [Memory Management, System Calls, & Functions with Side Effects](#memory-management-system-calls-functions-with-side-effects)
 
     2.3. [IPC](#ipc)
 
@@ -33,7 +33,7 @@
 
     4.3. [Autonomous Motion](#autonomous-motion)
 
-5. [Getting Maps](#Getting-maps)
+5. [Getting Maps](#getting-maps)
 
     5.1. [Grid Maps](#grid-maps)
 
@@ -59,9 +59,9 @@
 
 This document is designed to get CARMEN users started in writing new programs for integration into the program set. Because of the diverse skills and habits of programmers, the first section is a Style Guide to ensure compatability and clarity of new programs. The next secions describe the commands for getting information and issuing commands within CARMEN.
 
-## CARMEN Style Guide
+## <a name="carmen-style-guide"></a>2. CARMEN Style Guide
 
-### 2.1  The Prime Directive
+### <a name="the-prime-directive"></a>2.1 The Prime Directive
 
 You are not the only person who will ever have to read, understand and modify your code.
 
