@@ -127,7 +127,7 @@ You are not the only person who will ever have to read, understand and modify yo
 
 - When drawing to the screen, do not maintain internal representations of data in screen co-ordinates. Convert to screen co-ordinates only immediately before calling extern graphics functions. Use the helper functions in global_graphics.h.
 
-### <a name="naming_conventions"></a>2.3.  Naming Conventions
+### <a name="naming_conventions"></a>2.3. Naming Conventions
 
 - The most important naming convention is to expect that your code could be converted into a library one day. Therefore, it is important to think about global name spaces.
 
@@ -252,7 +252,7 @@ Debugging : it is easier to use a debugger with the former than the latter.
 
 Sensor data currently comes from one of two sources: the base module (such as scout, pioneer, etc.) provides raw odometry data and may provide sonar data, bumper data and infra-red (IR) data. The laser module may provide laser data.
 
-#### 3.0.1.  Subscribing
+#### 3.0.1. Subscribing
 
 All of the following messages can be subscribed to by using helper functions in the appropriate xxx_interface library, e.g., base_interface. The helper functions are all of the form:
 
@@ -273,7 +273,7 @@ If the handler field of the subscribe function is NULL, no handler is called, bu
 
 The subscribe_how field allows the user to either unsubscribe, or to start a new subscription. Subscribing only to the latest message allows the module to fall behind in processing messages without serious consequences. It should be pointed out that subscribing to all messages (CARMEN_SUBSCRIBE_ALL) does not guarantee all messages. Currently, the upper limit for the queue size is 1000 messages. If an IPC process actually subscribes to all messages and falls seriously behind (or wedges), central can run out of memory, or even worse, the TCP stack can overflow. Consequently, the Carmen subscription functions limit the maximum message queue size to 1000. A resourceful programmer can increase this queue (or even remove the queue size), but it is not clear this would ever be necessary.
 
-#### 3.0.2.  Requesting Data Explicitly
+#### 3.0.2. Requesting Data Explicitly
 
 Some of these messages can also be obtained using explicit queries. To date, the only robot data that can be obtained using queries are from localize and navigator. Specifically, carmen_localize_globalpos_message, carmen_localize_particle_message, carmen_navigator_status_message and carmen_navigator_plan_message can all be obtained using specific query interface functions, which return the appropriate messages directly.
 
@@ -281,7 +281,7 @@ These functions create new memory every time they return successfully; consequen
 
 3.1  Sensor Data from the Base
 
-### <a name="sensor-data-from-the-base"></a>3.1.  Sensor Data from the Base
+### <a name="sensor-data-from-the-base"></a>3.1. Sensor Data from the Base
 
 The timestamp field in all messages is defined to be the time when the data was first created or acquired (e.g, by scout or simulator).
 
@@ -496,7 +496,7 @@ The same message struct is used by both the carmen_robot_frontlaser and carmen_r
 
 The exact meaning of some these fields is a little bit of a mystery. This message is still in the experimental stage.
 
-### <a name="map-based-navigation-messages"></a>3.2.  Map-based Navigation Messages
+### <a name="map-based-navigation-messages"></a>3.2. Map-based Navigation Messages
 
 
 
@@ -780,7 +780,7 @@ Also, as a convience, variables can be requested either by specifying the fully 
 
 
 
-#### <a name="subscribing-to-changes"></a>6.1 Subscribing to Changes
+#### <a name="subscribing-to-changes"></a>6.1. Subscribing to Changes
 
 Some processes may wish to subscribe to changes to parameters during their execution, for example changing the robot speed or acceleration profile, or changing the robotgraph display parameters. Of course, some processes should not suscribe to some parameter changes: changing the number of particles localize uses during execution would result in disaster.
 
@@ -805,7 +805,6 @@ Parameter changes can be subscribed using the functions below:
 
 These functions take a module and variable name as parameters. The subscription mechanism can either silently change variable values as parameters change, or can invoke a callback when a parameter is changed. If the variable_address parameter is non-NULL, then the new parameter value is stored at this address (in the case of strings, this is a pointer to some newly-malloc'd memory containing the new string definition. If the variable address is non-NULL when the parameter changes, the old memory is freed.) If the handler parameter is non-NULL, then function pointed to by handler is invoked whenever the parameter changes. If both are non-NULL, then the variable changes and then the callback invoked. If both are NULL, then the subscription mechanism does not do much.
 
-6.2  The Parameter Factory
 
 #### <a name="the-parameter-factory"></a>6.2. The Parameter Factory
 
@@ -834,7 +833,7 @@ If a process loads its parameter set using the parameter factory methods, then r
 
 6.3  Specifying Parameters from the Command Line
 
-#### <a name="specifying-parameters-from-the-command-Line"></a> 6.3. Specifying Parameters from the Command Line
+#### <a name="specifying-parameters-from-the-command-line"></a> 6.3. Specifying Parameters from the Command Line
 
 Parameter values can be temporarily over-ridden from the command line of a given process, for that process only. For example:
 
