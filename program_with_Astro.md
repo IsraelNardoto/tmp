@@ -824,10 +824,10 @@ Parameters can be loaded in a single step using the parameter factory methods, m
     carmen_param_change_handler_t handler;
     } carmen_param_t;
 
-where module is the module name, variable is the variable name, type is one of CARMEN_PARAM_INT, CARMEN_PARAM_DOUBLE, CARMEN_PARAM_ONOFF or CARMEN_PARAM_STRING. The parameter is loaded into user_variable, whose original type should match that specified in the type field.
+where module is the module name, variable is the variable name, type is one of **CARMEN_PARAM_INT**, **CARMEN_PARAM_DOUBLE**, **CARMEN_PARAM_ONOFF** or **CARMEN_PARAM_STRING**. The parameter is loaded into ```user_variable```, whose original type should match that specified in the type field.
 If subscribe is set to 1, then the process will subscribe to changes to the parameter, and set up a callback on the function specified in handler (if not NULL). The callback parameter is ignored if subscribe is set to 0, and the parameter is only loaded once. There is no way to use the parameter factory methods, subscribe to a variable and not have the variable's value updated automatically.
 
-If carmen_param_allow_unfound_variables() is set to 0 (by default), then carmen_param_install_params will exit with an error on the first parameter absent from the parameter server, reporting what the problematic parameter is.
+If ```carmen_param_allow_unfound_variables()``` is set to 0 (by default), then ```carmen_param_install_params``` will exit with an error on the first parameter absent from the parameter server, reporting what the problematic parameter is.
 
 If a process loads its parameter set using the parameter factory methods, then running the process with the -h or -help command line option will print out a list of parameters used by that process, their expected types and whether or not the process subscribes to changes.
 
